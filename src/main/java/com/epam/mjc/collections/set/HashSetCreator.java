@@ -8,12 +8,12 @@ public class HashSetCreator {
         HashSet<Integer> res = new HashSet<>();
         for (Integer el: sourceList) {
             if (el != 0 && el % 2 == 0) {
-                int var = el;
-                while (var % 2 == 0) {
-                    res.add(var);
-                    var /= 2;
+                int v = el;
+                while (v % 2 == 0) {
+                    res.add(v);
+                    v /= 2;
                 }
-                res.add(var);
+                res.add(v);
             } else {
                 res.add(el);
                 res.add(el * 2);
